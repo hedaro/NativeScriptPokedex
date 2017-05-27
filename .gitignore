@@ -11,7 +11,6 @@ dist/
 package/
 platforms/
 
-*.js
 !tests/hooks/**/*.*
 !gruntfile.js
 !js-libs/**/*.*
