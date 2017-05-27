@@ -1,0 +1,21 @@
+<Page navigatingTo="onNavigatingTo" loaded="onLoaded">
+    <Page.actionBar>
+        <ActionBar title="{{name}}">
+        </ActionBar>
+    </Page.actionBar>
+    <!-- <GridLayout columns="auto, *" rows="auto">
+        <Image src="{{pokemonData.sprite ? pokemonData.sprite : ''}}" width="128"
+        col="0" row="0" horizontalAlignment="left"
+        backgroundColor="#FF0000" />
+        <Label text="{{name}}" col="1" row="0" horizontalAlignment="center" verticalAlignment="center" />
+        <ActivityIndicator busy="{{ isLoading }}" />
+    </GridLayout> -->
+    <StackLayout>
+        <Image src="{{pokemonData.sprite ? pokemonData.sprite : ''}}" width="128"
+        horizontalAlignment="center"
+        backgroundColor="#FF0000" />
+        <Label text="{{name}}" horizontalAlignment="center" fontSize="18" />
+        <Label text="{{pokemonData.types}}" horizontalAlignment="center" fontSize="15" />
+        <ActivityIndicator busy="{{ isLoading }}" />
+    </StackLayout>
+</Page>

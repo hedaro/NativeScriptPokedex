@@ -1,0 +1,14 @@
+<Page navigatingTo="onNavigatingTo" loaded="onLoaded">
+    <Page.actionBar>
+        <ActionBar title="{{name + ' pokedex'}}">
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout>
+        <ListView items="{{pokemonList}}">
+            <ListView.itemTemplate>
+                <Label text="{{ pokemon_species.name }}" tap="viewPokemon"/>
+            </ListView.itemTemplate>
+        </ListView>
+        <ActivityIndicator busy="{{ isLoading }}" />
+    </StackLayout>
+</Page>
